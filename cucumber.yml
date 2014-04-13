@@ -1,0 +1,4 @@
+android: RESET_BETWEEN_SCENARIOS=1 PLATFORM=android APP_PATH=packages/wordpress-android-debug.apk -r features/support -r features/android/support  -r features/step_definitions -r features/android/screens --format 'Slowhandcuke::Formatter'
+
+ios: RESET_BETWEEN_SCENARIOS=1 PLATFORM=ios APP_BUNDLE_PATH=packages/WordPress.app -r features/support -r features/ios/support  -r features/step_definitions -r features/ios/screens --format 'Slowhandcuke::Formatter'
+

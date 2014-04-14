@@ -7,7 +7,7 @@ When(/^I login with (valid|invalid) credentials to Add WordPress.com blog$/) do 
 end
 
 Then /^I (should|should not) be logged in$/ do |negate|
-sleep 6
+
   if negate.include? 'not'
     @screen.login_screen.should be_not_logged_in
   else
